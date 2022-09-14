@@ -1,36 +1,11 @@
-#include "main.h"
-
+#include<unistd.h>
 /**
- * jack_bauer - Prints the minutes of a day
- *
- * Return: no return
+ *  * main - prints the standrad error sandwiched around the  standard outpu/t
+ *   *
+ *    * Return: returns 1
  */
-
-void jack_bauer(void)
+int main(void)
 {
-	int a, b, c, d;
-
-	for (a = 48; a <= 50; a++)
-	{
-		for (b = 48; b <= 57; b++)
-		{
-			for (c = 48; c <= 53; c++)
-			{
-				for (d = 48; d <= 57; d++)
-				{
-					if (a >= 50 && b >= 52)
-					
-						break;
-						_putchar(a);
-						_putchar(b);
-						_putchar(58);
-						_putchar(c);
-						_putchar(d);
-						_putchar('\n');
-					
-				}
-			}
-		}
-	}
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
-
