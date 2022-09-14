@@ -1,21 +1,18 @@
-#include"main.h"
+#include <stdio.h>
 
 /**
  * main - Entry point
- *
- * Description: prints _putchar using putchar prototype
- *
- * Return: Always 0 (Success)
-*/
-
+ * author: Davidbeebest
+ * date: 14 sept 2022
+ * Return: always 0 (success)
+ */
 int main(void)
 {
-	char str[] = "_putchar";
-	int ch;
+	char s[] = "_putchar";
+	int i;
 
-	for (ch = 0; ch < 8; ++ch)
-		_putchar(str[ch]);
-	_putchar('\n');
-
+	for (i = 0; i < 8; i++)
+		putchar(s[i]);
+	putchar('\n');
 	return (0);
 }
