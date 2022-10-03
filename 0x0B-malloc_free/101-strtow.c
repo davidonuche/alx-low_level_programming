@@ -13,7 +13,7 @@ int wordnos(char *s)
 	flag = 0;
 	w = 0;
 
-	for (c = o; s[c] != '\0'; c++)
+	for (c = 0; s[c] != '\0'; c++)
 	{
 		if (s[c] == ' ')
 			flag = 0;
@@ -59,10 +59,10 @@ char **strtow(char *str)
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
-					*tmp++ == str[start++];
+					*tmp++ = str[start++];
 				*tmp = '\0';
 				matrix[k] = tmp - c;
-				k++
+				k++;
 				c = 0;
 			}
 		}
